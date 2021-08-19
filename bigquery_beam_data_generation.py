@@ -30,7 +30,7 @@ def _sanitize_page_path(page_path: Text):
   return page_path.split('?')[0]
 
 
-# 转换为tensorflow格式
+# 转换为tensorflow格式训练
 def create_tensorflow_example(features: Dict[Text, List[Union[int, float,Text]]]):
   """Populate a Tensorflow Example with the given features."""
   result = tf.train.Example()
